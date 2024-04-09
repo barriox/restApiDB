@@ -1,0 +1,20 @@
+{
+  "name": "rest-api-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app1": "node --watch app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "mongodb": "6.5.0",
+    "zod": "3.22.4"
+  }
+}
