@@ -2,7 +2,7 @@
 GET http://localhost:3000/movies
 
 ### get movies by id
-GET http://localhost:3000/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
+GET http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
 
 ### get movies by genre
 GET http://localhost:3000/movies?genre=Drama
@@ -14,13 +14,13 @@ Content-Type: application/json
 {
   "sql": "SELECT * FROM users", 
   "title": "The Godfather",
-  "year": 1975,
+  "year": 1970,
   "director": "Francis Ford Coppola",
   "duration": 175,
+  "rate":8.3,
   "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
   "genre": [
-    "Crime",
-    "Drama"
+    "Crime"
   ]
 }
 
@@ -32,7 +32,7 @@ Content-Type: application/json
 # }
 
 ### update movie
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/movies/1dccbc9c8524710e
 Content-Type: application/json
 
 {
@@ -40,5 +40,5 @@ Content-Type: application/json
 }
 
 ### delete movie
-DELETE http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+DELETE http://localhost:3000/movies/ed557e5d0d7eee65
 
