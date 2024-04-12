@@ -5,16 +5,22 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.mjs",
+    "start": "node app.js",
+    "start:mysql": "node --watch server-mysql.js",
+    "start:local": "node --watch server-local.js",
+    "start:supabase": "node --watch server-supabase.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "app1": "node --watch app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.42.0",
     "cors": "2.8.5",
+    "dotenv": "16.4.5",
     "express": "4.19.2",
     "mongodb": "6.5.0",
+    "mysql2": "3.9.4",
     "zod": "3.22.4"
   }
 }
